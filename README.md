@@ -1,5 +1,8 @@
 # 🚀 Zomboid Workshop API
 
+[![English README](https://img.shields.io/badge/Language-English-blue)](README.md)
+[![Português README](https://img.shields.io/badge/Idioma-Português-green)](README.pt-BR.md)
+
 High-performance Go + Redis API microservice for indexing, storing, and serving Project Zomboid Steam Workshop Mod ID to Workshop ID mappings.
 
 ---

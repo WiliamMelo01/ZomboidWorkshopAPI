@@ -1,0 +1,17 @@
+[Unit]
+Description=Project Zomboid Workshop Mappings API Service
+After=network.target redis-server.service
+Wants=redis-server.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/api
+ExecStart=/home/ubuntu/api/main
+Restart=always
+RestartSec=5
+Environment=PORT=8080
+Environment=REDIS_ADDR=localhost:6379
+
+[Install]
+WantedBy=multi-user.target
